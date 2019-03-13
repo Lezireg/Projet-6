@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <title>Nitefort Battle Royale</title>
+</head>
+
+<body>
+    <header>
+        <h1>NITEFORT</h1>
+        <h2>BATTLE ROYALE</h2>
+        <div class="short-menu">
+            <button class="retry-btn" id="retry-btn" title="Recommencer"><i class="fas fa-sync-alt"></i></button>
+            <button class="reload-btn" id="reload-btn" title="Relancer"><i class="fas fa-times"></i></button>
+        </div>
+    </header>
+    <main>
+        <div class="homepage">
+            <div id="title-player-choice">
+                <h2>Choisissez le nombre de joueurs :</h2>
+            </div>
+            <div id="players-choice">
+                <div class="player-name">
+                    <form>
+                        <input id="player-name1" value="Joueur 1" type="text" maxlength="10">
+                    </form>
+                </div>
+                <div class="player-name">
+                    <form>
+                        <input id="player-name2" value="Joueur 2" type="text" maxlength="10">
+                    </form>
+                </div>
+                <div id="add-button-container">
+                    <button class="add-button" id="add-button1">+</button>
+                </div>
+            </div>
+            <div id="start-button">
+                <button id="start">Commencer</button>
+            </div>
+        </div>
+        <div class="jeu">
+            <div id="gauche"> </div>
+            <div id="duel-display">
+            </div>
+            <canvas id="canvas">
+            </canvas>
+            <div id="droite"></div>
+            <div id="info-player">Pour déplacer votre personnage cliquez sur une case en surbrillance</div>
+        </div>
+    </main>
+    <div class="alert-message">
+        <i class="fas fa-exclamation"></i><br>
+        <h2>Ce jeu est prévu pour fonctionner sur des grands écrans. Merci de redimensionner la fenêtre.</h2>
+    </div>
+    <footer>
+        <p>Maxime Nedelec - &#9400;2018 - Application réalisée dans le cadre de la formation Developpeur
+            d'applications Frontend d'Openclassrooms</p>
+    </footer>
+    <!-- Fichiers javascript-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="canvas.js"></script>
+    <script src="board.js"></script>
+    <script src="players.js"></script>
+    <script src="weapons.js"></script>
+    <script src="game.js"></script>
+    <script src="init.js"></script>
+</body>
+
+</html>
